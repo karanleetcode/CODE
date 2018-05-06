@@ -1,0 +1,149 @@
+ 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+    TextView home,favlist,voicelist,text;
+    ListView mainlistlistview,favlistlistview;
+    ArrayList<Contacts> arrayList1 = new ArrayList<>();    //main list
+    ArrayList<Contacts2> arrayList = new ArrayList<>();
+    ArrayClass arrayClass = new ArrayClass();
+    ArrayList<Contacts> arr = new ArrayList<>();
+    CustomAdapter2 customAdapter2;      // for main list
+    CustomAdapter customAdapter;
+
+    final DBHandler2 dbHandler2 = new DBHandler2(this);
+    final DBHandler dbHandler = new DBHandler(this);
+
+    List<Contacts2> newlist = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        home = findViewById(R.id.home);
+        favlist = findViewById(R.id.favlist);
+        voicelist = findViewById(R.id.voicelist);
+
+        mainlistlistview = findViewById(R.id.mainlistlistview);
+        favlistlistview= findViewById(R.id.favlistlistview);
+
+
+       // arrayList1 = arrayClass.returnArraylist();
+       // customAdapter2 = new CustomAdapter2(getApplicationContext(),arrayList1);
+       // mainlistlistview.setAdapter(customAdapter2);
+// starting
+        mainlistlistview = findViewById(R.id.mainlistlistview);
+        favlistlistview= findViewById(R.id.favlistlistview);
+
+        if (SaveSharedPreferenc.getUserName(MainActivity.this).length() == 0) {
+            SaveSharedPreferenc s = new SaveSharedPreferenc();
+            s.setUserName(getApplicationContext(), "done");
+
+            arr = arrayClass.returnArraylist();
+
+            for (int i = 0; i <= 7; i++) {
+                dbHandler.addContact(new Contacts(arr.get(i).getID(),         arr.get(i).getWordName(),
+                        arr.get(i).getMean(),    arr.get(i).getSentence(),   arr.get(i).getStar(),    arr.get(i).getVoice()));
+                Toast.makeText(getApplicationContext(), arr.get(i).getID() + ":" + arr.get(i).getWordName()+":"+arr.get(i).getSentence(), Toast.LENGTH_SHORT).show();
+            }
+            customAdapter2 = new CustomAdapter2(getApplicationContext(),arr);
+            mainlistlistview.setAdapter(customAdapter2);
+        }
+        else{
+            List<Contacts> contacts3 = dbHandler.getAllContacts();
+
+            ArrayList<Contacts> arr2 = new ArrayList<>();
+            arr2.clear();
+            for (Contacts cn : contacts3) {
+                arr2.add(cn);
+            }
+            customAdapter2 = new CustomAdapter2(getApplicationContext(), arr2);
+            mainlistlistview.setAdapter(customAdapter2);
+        }
+//HOME BUTTON
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainlistlistview.setVisibility(View.VISIBLE);
+                favlistlistview.setVisibility(View.INVISIBLE);
+
+
+                view.setBackgroundColor(Color.rgb(176,	226,	255));
+                favlist.setBackgroundColor(Color.rgb(0	,191,	255	));
+                voicelist.setBackgroundColor(Color.rgb(0	,191,	255	));
+            }
+        });
+//FAV LIST BUTTON
+        favlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                favlistlistview.setAdapter(null);
+                List<Contacts2> contacts2 = new ArrayList<>();
+                contacts2.clear();
+                arrayList = new ArrayList<>();
+                contacts2 = dbHandler2.getAllContacts();
+                for (Contacts2 cn : contacts2) {
+                    arrayList.add(cn);
+                }
+
+                customAdapter = new CustomAdapter(getApplicationContext(), arrayList);
+                favlistlistview.setAdapter(customAdapter);
+
+                mainlistlistview.setVisibility(View.INVISIBLE);
+                favlistlistview.setVisibility(View.VISIBLE);
+                view.setBackgroundColor(Color.rgb(176,	226,	255));
+                home.setBackgroundColor(Color.rgb(0	,191,	255	));
+                voicelist.setBackgroundColor(Color.rgb(0	,191,	255	));
+
+            }
+        });
+//VOICE BUTTON
+        voicelist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainlistlistview.setVisibility(View.INVISIBLE);
+                favlistlistview.setVisibility(View.INVISIBLE);
+                view.setBackgroundColor(Color.rgb(176,	226,	255));
+                home.setBackgroundColor(Color.rgb(0	,191,	255	));
+                favlist.setBackgroundColor(Color.rgb(0	,191,	255	));
+
+            }
+        });
+    }
+
+}
+class SaveSharedPreferenc
+{
+    static final String PREF_USER_NAME= "username";
+    static SharedPreferences getSharedPreferences(Context ctx) {
+        return PreferenceManager.getDefaultSharedPreferences(ctx);
+    }
+    public static void setUserName(Context ctx, String userName)
+    {
+        SharedPreferences.Editor editor = getSharedPreferences(ctx).edit();
+        editor.putString(PREF_USER_NAME, userName);
+        editor.commit();
+    }
+    public static String getUserName(Context ctx)
+    {
+        return getSharedPreferences(ctx).getString(PREF_USER_NAME, "");
+    }
+}
