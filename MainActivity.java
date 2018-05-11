@@ -1,4 +1,4 @@
- 
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,29 +21,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    TextView home,favlist,voicelist,text;
-    ListView mainlistlistview,favlistlistview;
-    ArrayList<Contacts> arrayList1 = new ArrayList<>();    //main list
-    ArrayList<Contacts2> arrayList = new ArrayList<>();
     ArrayClass arrayClass = new ArrayClass();
-    ArrayList<Contacts> arr = new ArrayList<>();
-    CustomAdapter2 customAdapter2;      // for main list
-    CustomAdapter customAdapter;
 
-    final DBHandler2 dbHandler2 = new DBHandler2(this);
-    final DBHandler dbHandler = new DBHandler(this);
+    TextView home,favlist,voicelist,text;
+    ListView mainlistlistview,favlistlistview,voicelistview;
+
+    ArrayList<Contacts3> arrayList3 = new ArrayList<>();
+    ArrayList<Contacts> arrayList1 = new ArrayList<>();    //main arraylist
+    ArrayList<Contacts2> arrayList = new ArrayList<>();     //fav list
+    ArrayList<Contacts> arr = new ArrayList<>();
+
+    CustomAdapter3 customAdapter3;                          //for voice custom adapter
+    CustomAdapter2 customAdapter2;                         // for main list custom adapter
+    CustomAdapter customAdapter;                            //fav list custom adapter
+
+    final DBHandler3 dbHandler3 = new DBHandler3(this);    //database for voice list
+    final DBHandler2 dbHandler2 = new DBHandler2(this);    //database for star list
+    final DBHandler dbHandler = new DBHandler(this);      //database for main list
 
     List<Contacts2> newlist = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         home = findViewById(R.id.home);
         favlist = findViewById(R.id.favlist);
         voicelist = findViewById(R.id.voicelist);
 
         mainlistlistview = findViewById(R.id.mainlistlistview);
         favlistlistview= findViewById(R.id.favlistlistview);
+        voicelistview= findViewById(R.id.voicelistview);
 
 
        // arrayList1 = arrayClass.returnArraylist();
@@ -124,6 +132,9 @@ public class MainActivity extends AppCompatActivity {
                 view.setBackgroundColor(Color.rgb(176,	226,	255));
                 home.setBackgroundColor(Color.rgb(0	,191,	255	));
                 favlist.setBackgroundColor(Color.rgb(0	,191,	255	));
+
+                mainlistlistview.setVisibility(View.INVISIBLE);
+                favlistlistview.setVisibility(View.INVISIBLE);
 
             }
         });
