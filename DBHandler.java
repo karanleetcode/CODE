@@ -1,4 +1,13 @@
 
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class DBHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "contactsManager";
@@ -176,7 +185,7 @@ public class DBHandler extends SQLiteOpenHelper {
             return "1";
         }else {
             String s = cursor.getString(0)+":" + cursor.getString(1)+":" + cursor.getString(2)+":" + cursor.getString(3)+":" +
-                    cursor.getString(4);
+                    cursor.getString(4)+":"+cursor.getString(5);
         return s;
         }
 
@@ -192,6 +201,20 @@ public class DBHandler extends SQLiteOpenHelper {
     {
         SQLiteDatabase db = this.getWritableDatabase();
         String selectQuery = "UPDATE "+TABLE_CONTACTS +" SET " + KEY_STAR+ " = "+'"'+0+'"'+ " WHERE "+KEY_WORD_NAME+ " = "+'"'+word+'"';
+        db.execSQL(selectQuery);
+        db.close();
+    }
+    public void updateVoiceTo1(String word)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String selectQuery = "UPDATE "+TABLE_CONTACTS +" SET " + KEY_VOICE+ " = "+'"'+1+'"'+ " WHERE "+KEY_WORD_NAME+ " = "+'"'+word+'"';
+        db.execSQL(selectQuery);
+        db.close();
+    }
+    public void updateVoiceTo0(String word)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String selectQuery = "UPDATE "+TABLE_CONTACTS +" SET " + KEY_VOICE+ " = "+'"'+0+'"'+ " WHERE "+KEY_WORD_NAME+ " = "+'"'+word+'"';
         db.execSQL(selectQuery);
         db.close();
     }
