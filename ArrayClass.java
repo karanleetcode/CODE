@@ -773,6 +773,47 @@ public class ArrayClass {
         arrayList.add(new Contacts(94,"Scion","a descendant or heir","He's the scion of a very wealthy newspaper-publishing family.","0","descendant/child/heir/cutting/graft/slip"));
         arrayList.add(new Contacts(95,"Scoff","laugh at with contempt and derision","The critics scoffed at his paintings.","0","mock/deride/ridicule/sneer/dismiss/belittle"));
 
+          arrayList.add(new Contacts(88,"Scrutinize","examine carfully","He scrutinized the men's faces carefully/closely, trying to work out who was lying","0","examine/critical/survey/study/peruse/inspect"));
+        arrayList.add(new Contacts(89,"Scurrilous","expressing offensive reproach","a scurrilous remark/attack/article","","invective/contumelious/abusive/truculent/vituperative/vitriolic"));
+        arrayList.add(new Contacts(90,"Scurry","to move about","The mouse scurried across the floor.","","dainty/move/small steps/move forward/scamper/brisk pace"));
+        arrayList.add(new Contacts(91,"Sedate","characterized by dignity","The boy is quite sedate in his demeanor.","","serious/slow/relaxed/unruffled/quiet/peaceful"));
+        arrayList.add(new Contacts(92,"Sedentary","requiring seating","My doctor says I should start playing sport because my lifestyle is too sedentary.","0","settled/sitting/staying/living/permanent/inactive"));
+        arrayList.add(new Contacts(93,"Senile","infirm with age","He spent many years caring for his senile mother.","0"," doddery/ decrepit/ aged/ long in the tooth/ senescent/ failing/ declining/ infirm "));
+        arrayList.add(new Contacts(94,"Serenity","calm","She has a lovely serene face.","0","calmness/ calm/ composure/ tranquillity/ peacefulness/ peace of mind/ peace, "));
+        arrayList.add(new Contacts(95,"Servile","submissive and fawning with attitude","As a waiter you want to be pleasant to people without appearing totally servile.","0","obsequious/ sycophantic/ excessively deferential/ subservient/ fawning/ toadying "));
+        arrayList.add(new Contacts(89,"Sinecure","an office that involves minimal duties","Ross was later demoted to a sinecure at ABC’s beleaguered Lincoln Square Productions","0","easy job/ soft option/ informalcushy number/ money for old rope/ money for jam/ picnic"));
+        arrayList.add(new Contacts(90,"Singular","single","a singular ending/form/noun/verb","0","remarkable/ extraordinary/ exceptional/ outstanding/ striking/ signal/ eminent "));
+        arrayList.add(new Contacts(91,"Sinister","stemming from evil","The ruined house had a sinister appearance.","0","menacing/ threatening/ ominous/ forbidding/ baleful/ frightening/ eerie/ alarming "));
+        arrayList.add(new Contacts(92,"Site","the piece of land on which something is located","a building site","0","place/ put/ position/ situate/ locate/ set/ install"));
+        arrayList.add(new Contacts(93,"Skirmish","a minor short term fight","There was a short skirmish between the two of them","0","fight/ battle/ clash/ conflict/ encounter/ confrontation/ engagement/ fray/ contest"));
+        arrayList.add(new Contacts(94,"Slovenly","untidy","a slovenly appearance","0","scruffy/ untidy/ messy/ unkempt/ ill-groomed/ slatternly/ dishevelled/ bedraggled/ tousled"));
+        arrayList.add(new Contacts(95,"Sojourn","temporary stay","My sojourn in the youth hostel was thankfully short.","0","stay/ visit/ stop/ stopover/ residence/ holiday/ vacation"));
+
+
+
+        arrayList.add(new Contacts(88,"Solace","comfort","she sought solace in her religion","0","comfort/ consolation/ cheer/ support/ relief/joy"));
+        arrayList.add(new Contacts(89,"Solicit","request","he called a meeting to solicit their views","0","ask for/ request/ apply for/ put in for/ seek/ beg/ plead for/ sue for/ crave/ canvass,"));
+        arrayList.add(new Contacts(90,"Somber","grave or even gloomy","the night skies were sombre and starless","0","dark/ dark-coloured/ dull/ dull-coloured/ drab/ dingy/ shady"));
+        arrayList.add(new Contacts(91,"Sophistry","a deliberately invalid argument","trying to argue that I had benefited in any way from the disaster was pure sophistry","0","specious reasoning/ the use of fallacious arguments/ sophism/ casuistry/ quibbling/equivocation"));
+        arrayList.add(new Contacts(92,"Sordid","foul and run down","the story paints a sordid picture of bribes and scams","0","seedy/ seamy/ unsavoury/ shoddy/ vile/ foul/ tawdry/ louche/ cheap/ base "));
+        arrayList.add(new Contacts(93,"Spate","a sudden forceful flow","a spate of attacks on holidaymakers","0","run/ cluster/ string/ outbreak/ rash/ epidemic/ explosion/ plague "));
+        arrayList.add(new Contacts(95,"Spontaneous","said or done without having bee planned","\"the audience broke into spontaneous applause\"","0","unforced/ voluntary/ unconstrained/ unprompted/ unbidden/unsolicited/ unplanned "));
+        arrayList.add(new Contacts(88,"Sporadic","in intervals","sporadic fighting broke out","0","occasional/ infrequent/ irregular/ periodical/ periodic/ scattered/ patchy/ isolated/ odd"));
+        arrayList.add(new Contacts(89,"Spurious","unreal","separating authentic and spurious claims","0","bogus/ fake/ not genuine/ specious/ false/ factitious/ counterfeit/ fraudulent"));
+        arrayList.add(new Contacts(90,"Squeamish","easilt disgusted","I've always been squeamish about bugs","0","principled/ conscientious/ fastidious/ particular/ punctilious/ finicky/ fussy "));
+        arrayList.add(new Contacts(91,"Stagnant","not growing","a stagnant ditch","0","still/ motionless/ immobile/ inert/ lifeless/ dead/ standing/ slack/ static"));
+        arrayList.add(new Contacts(92,"Steep","sharp inclination","she pushed the bike up the steep hill","0","precipitous/sheer/ abrupt/ sharp/ perpendicular/ vertical/ bluff/ vertiginous "));
+        arrayList.add(new Contacts(93,"Staunch","firm and dependable","a staunch supporter of the anti-nuclear lobby","0","stalwart/ loyal/ faithful/ trusty/ committed/ devoted/ dedicated/ dependable"));
+        arrayList.add(new Contacts(94,"Stentorian","with a booming voice","a stentorian roar","0","loud/ booming/ thundering/ thunderous/ trumpeting/blaring/ roaring/ ear-splitting "));
+        arrayList.add(new Contacts(95,"Stereotype","established belief","the stereotype of the woman as the carer","0","typecast/ pigeonhole/ conventionalize/ standardize/ categorize/ compartmentalize"));
+        arrayList.add(new Contacts(88,"Stigma","a synbol of disgrace","the stigma of having gone to prison will always be with me","0","shame/ disgrace/ dishonour/stain/ taint/ blot/ blot on one's escutcheon/ blemish "));
+        arrayList.add(new Contacts(89,"Stipulate","make an express demand","he stipulated certain conditions before their marriage","0","specify/ set down/ set out/lay down/ set forth/state clearly/ demand/ require/ insist on "));
+        arrayList.add(new Contacts(90,"Strident","loud and harsh","his voice had become increasingly strident","0","harsh/ raucous/ rough/ grating/ rasping/ jarring/ loud/ stentorian/ shrill"));
+        arrayList.add(new Contacts(91,"Strife","bitter conflict","strife within the community","0","conflict/ friction/ discord/ disagreement/ dissension/ variance/ dispute/ argument "));
+        arrayList.add(new Contacts(92,"Stunt","check the grown or development","some weeds produce chemicals that stunt the plant's growth","0","inhibit/ impede/ hamper/ hinder/restrict/ retard/slow/ curb/ arrest,"));
+        arrayList.add(new Contacts(94,"Stymie","hinder or prevent the progress","the changes must not be allowed to stymie new medical treatments","0","impede/ interfere with/ hamper/ hinder/ obstruct/ inhibit/ frustrate/ thwart/foil/ spoil/ stall "));
+        arrayList.add(new Contacts(95,"Subjugate","make subserviant","the invaders had soon subjugated most of the population","0","conquer/ vanquish/ defeat/ crush/ quell/ quash/ gain mastery over/ gain ascendancy over"));
+
         /*
 
 * arrayList.add(new Contacts(88,"Candor","","","0",""));
