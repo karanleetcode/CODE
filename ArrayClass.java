@@ -814,6 +814,54 @@ public class ArrayClass {
         arrayList.add(new Contacts(94,"Stymie","hinder or prevent the progress","the changes must not be allowed to stymie new medical treatments","0","impede/ interfere with/ hamper/ hinder/ obstruct/ inhibit/ frustrate/ thwart/foil/ spoil/ stall "));
         arrayList.add(new Contacts(95,"Subjugate","make subserviant","the invaders had soon subjugated most of the population","0","conquer/ vanquish/ defeat/ crush/ quell/ quash/ gain mastery over/ gain ascendancy over"));
 
+          arrayList.add(new Contacts(88,"Subservient","compliant and obedient","she was subservient to her parents","0","submissive/ deferential/ acquiescent/ compliant/ accommodating/ obedient/ dutiful "));
+        arrayList.add(new Contacts(89,"Substantiate","establish or strengthen","they had found nothing to substantiate the allegations","0","prove/ give proof of/ show to be true/ give substance to/ support/ uphold/ back up"));
+        arrayList.add(new Contacts(90,"Subterfuge","to deceive","he had to use subterfuge and bluff on many occasions","0"," deviousness/ evasion/ deceit/ deception/ dishonesty/cheating/ duplicity"));
+        arrayList.add(new Contacts(92,"Succinct","brief","use short, succinct sentences","0","concise/short/ brief/compact/condensed/ crisp/ laconic/ terse/ tight/ to the point "));
+        arrayList.add(new Contacts(93,"Succulent","full of juice","a succulent steak","0","juicy/ moist/ luscious/ lush/ fleshy/pulpy/ soft/ tender/ fresh/ripe"));
+        arrayList.add(new Contacts(94,"Succumb","consent reluctantly","we cannot merely give up and succumb to despair","0","yield/ give in/ give way/ submit/ surrender/ capitulate/ cave in"));
+        arrayList.add(new Contacts(95,"Sullen","showing a brooding ill humor","a sullen pout","0","surly/ sulky/ pouting/ sour/ morose/resentful/ glum/ moody/ gloomy/ joyless"));
+        arrayList.add(new Contacts(88,"Sultry","exciting or gratifying","the sultry late summer weather had brought swarms of insects","0","humid/close/ airless/ stuffy/stifling/suffocating/ oppressive/ muggy"));
+        arrayList.add(new Contacts(89,"Sumptuous","rich and superior","the banquet was a sumptuous, luxurious meal","0","lavish/ luxurious/ deluxe/ opulent/ magnificent/ resplendent/ gorgeous/ splendid"));
+        arrayList.add(new Contacts(90,"Superficial","of,affecting, or being on","the building suffered only superficial damage","0","surface/ exterior/ external/ outer/ outside/ outermost/ peripheral/ slight"));
+        arrayList.add(new Contacts(91,"Superfluous","more than needed","the purchaser should avoid asking for superfluous information","0","surplus/ redundant/ unneeded/ not required/ excess/extra/ spare/to spare/ remaining"));
+        arrayList.add(new Contacts(92,"Supine","laying face upward","the government was supine in the face of racial injustice","0","flat on one's back/ prone/recumbent/ prostrate/stretched out/ spreadeagled/lying, "));
+        arrayList.add(new Contacts(93,"Supplication","the act of asking or begging","he fell to his knees in supplication","0","plea/appeal/ petition/ solicitation/ exhortation/urge/ prayer/ invocation/suit "));
+        arrayList.add(new Contacts(94,"Surfeit","indulge to satiety","a surfeit of food and drink","0","excess/ surplus/ abundance/oversupply/ superabundance/ superfluity/ overdose"));
+        arrayList.add(new Contacts(95,"Surge","rise and move","flooding caused by tidal surges","0","swell/ swelling/ heaving/ billowing/ rolling/ roll/ bulging/ eddying"));
+        arrayList.add(new Contacts(88,"Surmise","infer from incomplete evidence","he surmised that something must be wrong","0","guess/ conjecture/ suspect/ deduce/ infer/come to the conclusion/ conclude"));
+        arrayList.add(new Contacts(89,"Surreptitious","marked by secrecy","low wages were supplemented by surreptitious payments from tradesmen","0","secret/ stealthy/ clandestine/ secretive/sneaky/sly/ furtive/ concealed"));
+        arrayList.add(new Contacts(90,"Susceptible","yielding","patients with liver disease may be susceptible to infection","0","liable to/prone to/ subject to/ inclined to/ predisposed to/disposed to/ given to"));
+        arrayList.add(new Contacts(91,"Symptomatic","relating to sensations experienced","these difficulties are symptomatic of fundamental problems","0","indicative/ signalling/ warning/ characteristic/ suggestive/ typical/ representative"));
+        arrayList.add(new Contacts(92,"Taboo","a ban resulting from social custom","many taboos have developed around physical exposure","0","prohibition/ proscription/ veto/ interdiction/interdict/ ban/restriction"));
+        arrayList.add(new Contacts(93,"Tacit","implied by","your silence may be taken to mean tacit agreement","0","implicit/understood/implied/ inferred/ hinted/ suggested/ insinuated"));
+        arrayList.add(new Contacts(94,"Taint","place under suspicion","the lingering taint of creosote","0","trace/ touch/ suggestion/ hint/ tinge/tincture"));
+        arrayList.add(new Contacts(95,"Tangible","that can be touched","the atmosphere of neglect and abandonment was almost tangible","0"," palpable/ tactile/ material/ physical/real/ substantial/ corporeal/ solid"));
+
+        arrayList.add(new Contacts(88,"Tantalizing","arousing expectations and desires","such ambitious questions have long tantalized the world's best thinkers","0","tease/ torment/ torture/ bait/ tempt/entice/ lure/titillate/ intrigue/ allure"));
+        arrayList.add(new Contacts(89,"Tantamount","being essential equal to something","the resignations were tantamount to an admission of guilt","0","equivalent to/ equal to/amounting to/ as good as/ more or less/ synonymous with"));
+        arrayList.add(new Contacts(90,"Taut","pulled or drawn tight","the fabric stays taut without adhesive","0","flexed/ tensed/ tightened/ hard/ solid/ firm/rigid/stiff/ unyielding"));
+        arrayList.add(new Contacts(92,"Temerity","boldness","no one had the temerity to question his conclusions","0","audacity/ boldness/ audaciousness/ nerve/ effrontery/ impudence/ impertinence"));
+        arrayList.add(new Contacts(93,"Tenable","based on sound reasoning","such a simplistic approach is no longer tenable","0","defensible/justifiable/ defendable/ supportable/ sustainable/ maintainable"));
+        arrayList.add(new Contacts(94,"Tenacious","stubbornly unyielding","a tenacious grip","0","persevering/ persistent/pertinacious/determined/dogged/single-minded/ strong-willed"));
+        arrayList.add(new Contacts(95,"Terminate","to end","he was advised to terminate the contract","0","bring to an end/ end/ bring to a close/conclusion/ close/ conclude/ finish/stop/ put an end to"));
+        arrayList.add(new Contacts(88,"Terminus","end","the end of a railway or other transport route, or a station at such a point ,a terminal","0","station/ last stop/ end of the line/ terminal/ depot/ garage"));
+        arrayList.add(new Contacts(89,"Terse","short","a terse statement","0","curt/ brusque/ abrupt/ clipped/blunt/ gruff/ short/ brief/ concise/ succinct"));
+        arrayList.add(new Contacts(90,"Therapy","act of caring","a course of antibiotic therapy","0","treatment/ remedy/ cure/ remedial treatment/ method of healing/salutary"));
+        arrayList.add(new Contacts(91,"Throng","large crowd","he pushed his way through the throng","0","crowd/ mass/ multitude/ horde/ host/ mob/ assemblage/ gathering"));
+        arrayList.add(new Contacts(92,"Thwart","hinder or prevent","he never did anything to thwart his father","0","prevent/hinder/impede/opaque/block/blur"));
+        arrayList.add(new Contacts(93,"Timorous","showing or suffering from nervousness","a timorous voice","0","easily frightened/ lacking courage/ fearful/ apprehensive/ faint-hearted/feeble"));
+        arrayList.add(new Contacts(94,"Tinge","color lightly","a mass of white blossom tinged with pink","0","tint/ colour/ dye/ stain/ shade/ suffuse/flush/ imbue/wash/ overlay/bathe "));
+        arrayList.add(new Contacts(95,"Tolerate","put up something","a regime unwilling to tolerate dissent","0","allow/ permit/ authorize/ sanction/ condone/ indulge/ agree to/ accede to/ approve of"));
+        arrayList.add(new Contacts(88,"Tortuous","marked by turns and bends","the route is remote and tortuous","0","twisting/ winding/ curving/ curvy/ bending/sinuous/ undulating/ coiling"));
+        arrayList.add(new Contacts(89,"Tradition","a specific practice","members of different castes have by tradition been associated with specific occupations","0","historical convention/ unwritten law/oral history/heritage/ lore/ folklore/ old wives"));
+        arrayList.add(new Contacts(90,"tranquil","calm","her tranquil gaze","0","peaceful/ restful/ reposeful/ calm/ quiet/still/ serene/placid,"));
+        arrayList.add(new Contacts(91,"Transient","lasting for short period","a transient cold spell","0","transitory/ temporary/ short-lived/ short-term/ ephemeral/ impermanent/ brief/ short"));
+        arrayList.add(new Contacts(92,"Tremulous","quivering as from weakness","he gave a tremulous smile","0","shaking/ unsteady/ quavering/ wavering/ quivering/ quivery/ quaking"));
+        arrayList.add(new Contacts(93,"Trenchant","having keenness","the White Paper makes trenchant criticisms of health authorities","0","incisive/ cutting/ pointed/ piercing/ penetrating/ sharp/ keen/acute/razor-sharp"));
+        arrayList.add(new Contacts(94,"Trend","a general tendency to change","an upward trend in sale","0","tendency/ movement /drift/ swing/ shift/ course/ current/ run/ direction/ inclination"));
+        arrayList.add(new Contacts(95,"Trivial","small and little importance","huge fines were imposed for trivial offences","0","unimportant/ insignificant/ inconsequential/ minor/ of no/little account/ of no/little "));
+
         /*
 
 * arrayList.add(new Contacts(88,"Candor","","","0",""));
